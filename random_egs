@@ -1,0 +1,61 @@
+#Cuando cumplis 100 años
+
+nombre = input("Tu nombre: ")
+edad = int(input("Tu edad: "))
+cien_años = 100 - edad
+año = 2022
+target = 2022 + cien_años
+print("Hola ", nombre, "vas a cumplir 100 años en ", target, ".")
+
+
+# imprimir todo lo que es menor a 5
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+
+b = []
+
+seleccion = int(input("Numero: "))
+
+for n in a: 
+    if n < seleccion:
+        b.append(n)
+print(b)
+
+#es divisor
+
+numero = int(input("Numero: "))
+divisores = []
+for n in range(1, numero):
+    if numero%n == 0:
+        divisores.append(n)
+print(divisores)
+
+#List overlap
+
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+ayb = a + b
+ayb = set(ayb)
+print(list(ayb))
+
+# Ask the user for a string and print out whether this string is a palindrome or not. (A palindrome is a string that reads the same forwards and backwards.)
+
+palabra = input("Palabra: ")
+
+if palabra[::-1] == palabra:
+    print("Es capicua")
+else:
+    print("No es capicua")
+
+# Write one line of Python that takes this list a and makes a new list that has only the even elements of this list in it.
+
+lista = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+lista_2 = []
+
+for n in lista:
+    if n/2 == 0:
+        lista_2.append(n)
+
+lista_pares = [num for num in lista if num%2 == 0]
+print(lista_pares)
